@@ -1,45 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyberdoc - Moraes Sales</title>
+    <title>Senha de Acesso</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0;
-        }
-        h1 {
-            color: darkblue;
-            margin-bottom: 5px;
+            text-align: center;
         }
         h2 {
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-        .buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 18px;
-            cursor: pointer;
+            color: darkblue;
         }
     </style>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "cyberdoc321321") {
+                window.location.href = "cyberdoc.html";
+            } else {
+                alert("Senha incorreta, tente novamente.");
+            }
+        }
+    </script>
 </head>
 <body>
-    <h1>Cyberdoc - Moraes Sales</h1>
-    <h2>Saldos Diários de Caixa e DRE de Caixa</h2>
-    <div class="buttons">
-        <button onclick="window.open('saldo_de_caixa.html', '_self');">Saldo de Caixa Diário</button>
-        <button onclick="window.open('dre_resultados.html', '_self');">DRE - Resultados de Caixa</button>
-    </div>
+    <h2>Digite a Senha de Acesso</h2>
+    <input type="password" id="password" placeholder="Senha">
+    <button onclick="checkPassword()">Acessar</button>
 </body>
 </html>
