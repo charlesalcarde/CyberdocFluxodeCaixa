@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saldo de Caixa Diário</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 60px);
+        }
+        button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQaxvJ_4Fm-NE0u1BZjxY44pCew4JMWcZvcgCWCrvFkB28k0bPF4KOV-8E32PwarQ/pubchart?oid=1383457070&format=interactive" frameborder="0"></iframe>
+    <button onclick="window.location.href='index.html';">Voltar</button>
+</body>
+</html>
